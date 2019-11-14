@@ -1,0 +1,1 @@
+[![Build Status](https://dev.azure.com/CodeCrafter96/Consolidamento_pipelines/_apis/build/status/Dotnet-aspnetcore-functionApp?branchName=master)](https://dev.azure.com/CodeCrafter96/Consolidamento_pipelines/_build/latest?definitionId=9&branchName=master)
