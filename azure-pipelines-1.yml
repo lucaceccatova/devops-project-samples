@@ -30,8 +30,13 @@ steps:
 
 - task: VSTest@2
   inputs:
-    testSelector: 'testRun'
+    testSelector: 'testAssemblies'
+    testAssemblyVer2: |
+      **\*test*.dll
+      !**\*TestAdapter.dll
+      !**\obj\**
     searchFolder: 'dotnet/aspnet46/functionapp/Application/SampleFunctionApp.Test'
+
 - task: PublishBuildArtifacts@1
   inputs:
     PathtoPublish: '$(Build.ArtifactStagingDirectory)'
