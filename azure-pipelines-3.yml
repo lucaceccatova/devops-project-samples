@@ -9,12 +9,12 @@ trigger:
        - master
   paths:
      include:
-       - dotnet/aspnetcore22/Application/*
+       - dotnet/aspnetcore22/webappWithTests/Application/*
 pool:
   vmImage: 'windows-latest'
 
 variables:
-  solution: 'dotnet/aspnetcore22/Application/*.sln'
+  solution: 'dotnet/aspnetcore22/webappWithTests/Application/*.sln'
   buildPlatform: 'Any CPU'
   buildConfiguration: 'Release'
 
